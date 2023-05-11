@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div >
+    <!-- <AppBar/>
+    <SliderWrapper />
+    <PageFooter /> -->
+    <HeaderBar/>
+    <HeroImage/>
   </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// import AppBar from './components/AppBar/AppBar.vue';
+// import SliderWrapper from './components/Slider/SliderWrapper.vue';
+// import storelocator from './components/Footer/PageFooter.vue'
+import HeaderBar from './components/Header/Header_Bar.vue'
+import HeroImage from './components/HeroImage/HeroImage.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  //  AppBar,
+  //  SliderWrapper,
+  //  storelocator,
+  HeaderBar,
+  HeroImage,
+ 
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
